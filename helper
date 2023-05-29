@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Owner</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- to add the image logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        <?php
+        include('css/new.css');
+        ?>
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="picture">
+                <h1>Rice Mill Manager</h1>
+            </div>
+            <div class="user">
+                <h2><center class="sign-up">Stock Entry</center></h2>
+                <form class="form-element" method="POST" enctype="multipart/form-data">
+                    
+                    <input  id="name" type="text" name="stock_name" placeholder="Stock name" required>
+                    <input  id="email" type="email" name="email" placeholder="E-mail" required>
+                    <input id="age" type="number" name="age" placeholder="Age" required>
+                    <input  id="password" type="password" name="password" placeholder="password" required>
+                    <input  id="confirmpassword" type="password" name="conpassword" placeholder="confirm password" required>  
+                    <!-- display post -->
+                    <br>
+                    <center>
+                    <label for="post">
+                        <i class="fa fa-camera"></i>
+                    </label>
+                    </center>
+                   <input id="post" type="file" name="DpProfile" >
+                   <!-- display post end -->
+                    <!-- name of the file -->
+                   <input  id="name" type="text" name="dpname" placeholder="File Name" required>
+                    <hr>
+                    <center><span><label id="accept" for="confirm">I Accept the privacy policy</label>
+                        <input name="check" value="true" type="checkbox"></span></center>
+                   <center><input name="submit" id="sign-up" type="submit" value="sign-up"></center>
+                </form>
+                <h5 style="color:blue; margin-left: 3px;"><a href="signin.php">Sign-in</a></h5>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
